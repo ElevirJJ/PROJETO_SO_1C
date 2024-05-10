@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Cadastro de Animal</title>
+    </head>
+
+    <body>  
+
+        <div>
+            <h1 id="titulo">Cadastre sua consulta</h1>
+            <p id="subtitulo">Complete as informações com seus dados</p>
+            <br>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <div class="campo">
+                <label for="Bairro"><strong>Bairro</strong></label>
+                <input type="Bairro" name="Bairro" id="Bairro" required>
+            </div>
+
+
+            <div class="campo">
+                <label for="CPF"><strong>CPF</strong></label>
+                <input type="CPF" name="CPF" id="CPF" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Selecione o meio do seu atendimento?</strong></label>
+                <label>
+                    <input type="radio" name="animal" value="Castração" checked>Castração
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="Cirugia">Cirugia
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="Vacinação">Vacinação
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="Grau"><strong>Grau de comportamento do animal:</strong></label>
+                <select id="Grau" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Bravo</option>
+                  <option>Regular</option>
+                  <option>Calmo</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione qual é seu animal de estimação:</strong></label><br><br>
+                    <input type="checkbox" id="Cachorro1" name="Cachorro1" value="Cachorro">
+                    <label for="Cachorro1">Cachorro</label>
+                    <input type="checkbox" id="Gato2" name="Gato2" value="Gato">
+                    <label for="Gato2">Gato</label>
+                    <input type="checkbox" id="Outro" name="Outro" value="Outro">
+                    <label for="Outro">Outro animal</label>
+                    
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais sobre o seu animal: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
