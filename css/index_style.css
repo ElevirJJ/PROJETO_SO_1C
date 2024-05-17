@@ -1,3 +1,4 @@
+/* Autofill Styling */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -10,113 +11,225 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
 }
 
-
-body{
-    background-color:#C4F1FF;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+/* Body Styling */
+body {
+  background-color: #c4f1ff;
+  width: 50%;
+  margin: 0 auto;
 }
 
-img{
-    display: flex;
-    width: 120px;
-    margin-left: auto;
-    margin-right: auto;
+/* Image Styling */
+img {
+  display: flex;
+  width: 120px;
+  margin: 0 auto;
 }
 
-h1{
-    margin-top: 0;
-    margin-bottom: 30px;
-    text-align: center;
+/* Heading Styling */
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
 }
 
-.caixa_dados{
-    border-radius: 15px;
-    border: solid 1px #C1C1C1;
-    padding-left: 0;
+/* Form Container Styling */
+.caixa_dados,
+.caixa_confirmacao {
+  border-radius: 15px;
+  border: 1px solid #c1c1c1;
+  background-color: #f1f1f1;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+/* Input Styling */
+input {
+  font-size: 18px;
+  border: 1px solid #c1c1c1;
+  padding-left: 10px;
+  border-radius: 8px;
+  width: 95%;
+  height: 25px;
+  display: block;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #2b77cf;
+}
+
+/* Form Styling */
+form {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+/* Label Styling */
+label {
+  font-size: 18px;
+  display: inline-block;
+  margin: 20px 0 8px 0;
+}
+
+/* Password Recovery Link Styling */
+#recuperar_senha {
+  position: relative;
+  left: 41%;
+  font-size: 16px;
+  display: inline;
+}
+
+/* Button Styling */
+.botao {
+  background-color: #2b77cf;
+  color: white;
+  border: none;
+  margin-top: 18px;
+  border-radius: 6px;
+  height: 25px;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+}
+
+.botao:hover {
+  background-color: #0f7dfe;
+}
+
+/* Link Styling */
+a {
+  color: #2b77cf;
+}
+
+a,
+a:visited,
+a:active,
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Paragraph Styling */
+p {
+  text-align: center;
+  width: 90%;
+  margin: 30px auto;
+}
+
+/* Warning Message Styling */
+#aviso_conferir {
+  color: red;
+  font-size: 22px;
+  text-align: left;
+}
+
+/* Register Button Styling */
+#botao_cadastrar {
+  margin-bottom: 20px;
+}
+
+/* Invalid Input Styling */
+.input_invalido {
+  border-width: 2px;
+  border-color: red;
+}
+
+/* Error Message Styling */
+#msg_erro_nome,
+#msg_erro_data,
+#msg_erro_cpf,
+#msg_erro_phone,
+#msg_erro_email,
+#msg_erro_senha,
+#msg_erro_senhaR,
+#msg_erro_login {
+  display: none;
+  color: red;
+  margin-bottom: 4px;
+}
+
+/* Confirmation Box Styling */
+
+.caixa_confirmacao {
+  display: none;
+}
+
+.caixa_confirmacao p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#botao_voltar_para_tela_login {
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+#msg_erro_login{
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.dashboard_body{
+  width: 100%;
+}
+
+.dashboard_body h3{
+  text-align: left;
+  margin-top: 50px;
+}
+
+#user-icon{
+  display: inline;
+  width: 100px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.menu_bar{
+  position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Adjust the width as needed */
     background-color: #f1f1f1;
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    display: inlne-block;  
-}
-
-input{
-    font-size: 18px;
-    border: 1px solid #C1C1C1;
-    padding-left: 10px;
-    border-radius: 8px;
-    width: 95%;
-    height: 25px;
-    display:block;
-}
-
-form{
-    width: 90%;
-    display: block;
-    margin: auto;
-}
-
-label{
-    font-size: 18px;
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 8px;
-}
-
-#recuperar_senha{
-    position: relative;
-    left: 41%;
-    font-size: 16px;
-    display: inline ;
-}
-
-.botao{
-    background-color: #2B77CF;
-    color: white;
-    border-style: none;
-    margin-top: 18px;
-    border-radius: 6px;
-    height: 25px;
-    width: 100%;
-    display:block;
-    font-size: 16px;
-}
-
-.botao:hover{
-    background-color: #0F7DFE;
-}
-
-input:focus{
-    outline: none !important;
-    border:2px solid #2B77CF;
-  }
-
-a{  
-    color: #2B77CF;
-}
-
-a, a:visited, a:active, a:link{
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-p{
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto; /* Optional: Adds a scrollbar if the content overflows */
     text-align: center;
-    width: 90%;
-    margin: 30px auto;
-}
-
-#aviso_conferir{
-    color: red;
     font-size: 22px;
-    text-align: left;
 }
 
-#botao_cadastrar{
-    margin-bottom: 20px;
+.menu_bar a{
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+#link_editar_conta{
+  text-align: center;
+  margin-left: 0;
+}
+
+.content{
+  margin-left: 250px; /* Adjust this value to match the width of the menubar */
+    padding: 20px;
+    flex: 1; /* Ensures the content takes up the remaining space */
+}
+
+#botao_cadastrar_pet{
+  margin-bottom: 20px;
+}
+
+#tipo{
+  display: block;
+  height: 25px;
+  font-size: 18px;
 }

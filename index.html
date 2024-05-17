@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="css/index_style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Login</title>
-  <link rel="stylesheet" href="css/index_style.css">
-</head>
-
-<body>
-  <img src="logo.png" alt="logo" height="120">
-  <h1>Login</h1>
-  <div class="caixa_dados">
-    <form>
-      <label for="e-mail">Endereço de e-mail</label>
-      <input type="email" id="email" name="email">
-      <label for="senha">Senha</label>
-      <a id="recuperar_senha" href="recuperar_senha.html">Esqueceu a senha?</a>
-      <input type="password" id="senha" name="lname">
-      <button class="botao" type="button">Entrar</button>
-    </form>
-    <p id="pergunta_conta">Ainda não possui conta? <a id="link_cadastro" href="cadastro.html">Fazer cadastro</a></p>
-  </div>
-
-</body>
-
+  <body>
+    <img src="img/logo.png" alt="logo" height="120" />
+    <h1>Login</h1>
+    <div class="caixa_dados">
+      <form>
+        <span id="msg_erro_login"></span>
+        <label for="email">Endereço de e-mail</label>
+        <input type="email" id="email"/>
+        <label for="senha">Senha</label>
+        <a id="recuperar_senha" href="#">Esqueceu a senha?</a>
+        <input type="password" id="senha"/>
+        <button class="botao" type="button" onclick="fazerLogin()" id="botao_login">Entrar</button>
+      </form>
+      <p id="pergunta_conta">Ainda não possui conta? <a id="link_cadastro" href="cadastro.html">Fazer cadastro</a></p>
+    </div>
+    <script src="js/funcoes_index.js"></script>
+    <script src="js/requisicoes.js"></script>
+  </body>
 </html>
