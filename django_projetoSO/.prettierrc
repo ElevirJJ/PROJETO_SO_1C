@@ -1,7 +1,0 @@
-{
-	"plugins": ["prettier-plugin-django-alpine"],
-	"tabWidth": 4,
-	"useTabs": true,
-	"bracketSameLine": true,
-	"printWidth": 150
-}

@@ -1,0 +1,20 @@
+{% extends base_template %}
+{% load static %}
+{% block title %}
+Agendamento concluído
+{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/agendar_style.css' %}" />
+{% endblock %}
+{% block content %}
+<img src="{% static 'img/logo.png' %}" alt="Logo" />
+<h1 id="titulo_confirmacao">Dados editados com sucesso!</h1>
+<div class="caixa_dados" id="mensagem_confirmacao">
+	<p id="texto_confirmacao">Um e-mail foi enviado com a confirmação da alteração dos dados</p>
+	<a id="link_botao_voltar" href="#"><button class="botao_cadastrar" id="botao_voltar">Voltar</button></a>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/sucesso_scripts.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends base_template %}
+{% load static %}
+{% block title %}
+Agendamento concluído
+{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/agendar_style.css' %}" />
+{% endblock %}
+{% block content %}
+<img src="{% static 'img/logo.png' %}" alt="Logo" />
+<h1 id="titulo_confirmacao">Agendamento realizado com sucesso!</h1>
+<div class="caixa_dados" id="mensagem_confirmacao">
+	<p id="texto_confirmacao">A confirmação do seu agendamento foi enviada por e-mail</p>
+	<a id="link_botao_cadastrar_novamente" href="{% url 'agendar' %}"
+		><button class="botao_cadastrar" id="botao_cadastrar_novamente">Realizar outro agendamento</button></a
+	>
+</div>
+{% endblock %}
